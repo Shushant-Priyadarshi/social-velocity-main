@@ -1,4 +1,5 @@
-import HomePage from './home/HomePage';
+import HomePage from './pages/HomePage';
+
 export default function App() {
   return (
    <>
