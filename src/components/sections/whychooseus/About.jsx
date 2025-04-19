@@ -1,8 +1,9 @@
-import React from "react";
+import React, { forwardRef } from "react";
 
-const About = () => {
+const About = forwardRef ((props,aboutRef) => {
   return (
     <section
+      ref={aboutRef}
       id="about"
       className="py-16 md:py-24 max-w-6xl mx-auto px-4 sm:px-6"
     >
@@ -109,6 +110,6 @@ const About = () => {
       </div>
     </section>
   );
-};
+});
 
 export default About;

@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import Marquee from 'react-fast-marquee';
 import CountUp from '../../reactbits/CountUp';
 
-const OurClients = () => {
+const OurClients = forwardRef ((props,trustedbyRef) => {
   const clientLogos = [
     "https://ext.same-assets.com/3823013307/3294975350.png",
    
@@ -22,7 +22,7 @@ const OurClients = () => {
   };
 
   return (
-    <section id="clients" className="py-10 md:py-16 bg-white">
+    <section ref={trustedbyRef} id="clients" className="py-10 md:py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-2xl md:text-4xl font-bold text-center mb-10 text-[#1d2549]">
           Trusted By <span className="text-themeColor">
@@ -51,6 +51,6 @@ const OurClients = () => {
       </div>
     </section>
   );
-};
+});
 
 export default OurClients;

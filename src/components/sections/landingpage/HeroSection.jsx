@@ -1,9 +1,9 @@
-import React from 'react';
+import React,{ forwardRef } from 'react';
 
-const HeroSections = () => {
+const HeroSections =forwardRef((props,landingRef) => {
   return (
     <div>
-      <section id="home" className="relative overflow-hidden min-h-[36rem] flex items-center px-4 sm:px-6 md:px-10 py-12 md:py-0">
+      <section ref={landingRef} id="home" className="relative overflow-hidden min-h-[36rem] flex items-center px-4 sm:px-6 md:px-10 py-12 md:py-0">
         <div className="max-w-7xl mx-auto w-full relative z-10 flex flex-col-reverse md:flex-row items-center justify-between gap-10">
           {/* Left: Hero Text */}
           <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start text-center md:text-left animate-fade-in">
@@ -57,6 +57,6 @@ const HeroSections = () => {
       </section>
     </div>
   );
-};
+});
 
 export default HeroSections;

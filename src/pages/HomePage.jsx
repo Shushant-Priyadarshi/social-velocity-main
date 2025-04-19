@@ -1,4 +1,4 @@
-import React from 'react'
+
 import HeroSection from "../components/sections/landingpage/HeroSection";
 import NavBar from "../components/common/NavBar";
 import ServiceSection from "../components/sections/services/ServiceSection";
@@ -9,10 +9,23 @@ import StastAndTestimonials from "../components/sections/testimonials/StatsAndTe
 import Contact from "../components/sections/contactus/Contact";
 import Footer from "../components/common/Footer";
 import WhatsAppBtn from "../components/common/WhatsAppBtn";
+import { useRef } from "react";
 
 const HomePage = () => {
+  const aboutRef = useRef(null);
+  const contactRef = useRef(null);
+  const landingRef = useRef(null);
+  const serviceRef = useRef(null);
+  const testimonialsRef = useRef(null);
+  const trustedbyRef = useRef(null);
+  const workedwithyRef = useRef(null);
+
+  const scrollToSection = (ref) => {
+    ref.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
-    <div>
+    <div className='smooth-scroll'>
 
 <div className="min-h-screen flex flex-col font-sans  relative overflow-x-hidden">
       {/* <div className="hidden md:block absolute top-32 left-1/2 transform -translate-x-1/2 w-1/2 h-[400px]   bg-gradient-to-r from-blue-400 to-blue-700 blur-3xl opacity-30"></div>
@@ -22,19 +35,19 @@ const HomePage = () => {
 
       <header>
       {/* Navbar */}
-      <NavBar />
+      <NavBar  scrollToSection={scrollToSection} aboutRef = {aboutRef} contactRef={contactRef} landingRef={landingRef} serviceRef={serviceRef} testimonialsRef={testimonialsRef} trustedbyRef={trustedbyRef} workedwithyRef={workedwithyRef} />
       </header>
 
         <main>
       {/* Hero Section with Illustration and Enhanced Style */}
-      <HeroSection />
+      <HeroSection ref={landingRef}/>
 
   
       {/* Services Section */}
-      <ServiceSection />
+      <ServiceSection ref={serviceRef}/>
 
       {/* Work We Have Done Section */}
-      <OurWork />
+      <OurWork ref={workedwithyRef} />
 
       {/* Decorative Divider
       <div className="w-full overflow-hidden -mb-1 rotate-180 h-24 bg-themeColor ">
@@ -42,18 +55,18 @@ const HomePage = () => {
       </div> */}
 
       {/* Clients Section */}
-      <OurClients />
+      <OurClients ref={trustedbyRef}/>
 
       {/* About Section (Expanded) */}
-      <About />
+      <About ref={aboutRef}/>
 
       
 
       {/* Testimonials / Stats Section */}
-      <StastAndTestimonials />
+      <StastAndTestimonials ref={testimonialsRef}/>
 
       {/* Contact Section */}
-      <Contact />
+      <Contact ref={contactRef}/>
       </main>
 
       <footer>

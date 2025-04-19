@@ -49,7 +49,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="text-xs md:text-sm text-[#7b8197] mt-3 md:mt-0 text-center md:text-right">
-          © {new Date().getFullYear()} Social Velocity. All rights reserved.
+          © 2021 Social Velocity. All rights reserved.
         </div>
       </div>
     </footer>

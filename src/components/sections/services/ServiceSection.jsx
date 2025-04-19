@@ -1,9 +1,9 @@
-import React from "react";
+import React, { forwardRef } from "react"
 import ServiceBento from "./ServiceBento";
 
-const ServiceSection = () => {
+const ServiceSection =forwardRef ((props,serviceRef) => {
   return (
-    <div className="bg-themeColor mb-10">
+    <div ref={serviceRef} className="bg-themeColor mb-10">
       <section
         id="services"
         className="py-14 max-w-7xl mx-auto px-2 md:px-10"
@@ -34,6 +34,6 @@ const ServiceSection = () => {
       </section>
     </div>
   );
-};
+});
 
 export default ServiceSection;

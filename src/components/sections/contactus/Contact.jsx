@@ -1,15 +1,16 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import AOS from "aos"
 import "aos/dist/aos.css"
 import { useEffect } from 'react';
 
-const Contact = () => {
+
+const Contact = forwardRef ((props,contactRef) => {
   useEffect(()=>{
     AOS.init({duration:800});
   })
 
   return (
-    <div>
+    <div ref={contactRef}>
       <section id="contact" className="py-14 md:py-20 max-w-5xl mx-auto px-4">
       <h2 className="text-3xl md:text-5xl font-bold text-center mb-3 text-[#1d2549]" data-aos="fade-right">
   Get in <span className="text-themeColor">Touch</span>
@@ -78,6 +79,6 @@ const Contact = () => {
       </section>
     </div>
   );
-};
+});
 
 export default Contact;

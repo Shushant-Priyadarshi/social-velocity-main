@@ -1,8 +1,8 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import CountUp from '../../reactbits/CountUp'
-const StatsAndTestimonials = () => {
+const StatsAndTestimonials =forwardRef ((props,testimonialsRef) => {
   return (
-    <div>
+    <div ref={testimonialsRef}>
       <section className="py-10 md:py-14 bg-themeColor">
         <div className="max-w-5xl mx-auto px-2 md:px-4 text-center">
           <h2 className="text-xl md:text-3xl font-bold mb-7 md:mb-10 text-[#1d2549]">
@@ -84,6 +84,6 @@ const StatsAndTestimonials = () => {
       </section>
     </div>
   );
-};
+});
 
 export default StatsAndTestimonials;

@@ -1,10 +1,9 @@
-import React, { useState } from "react";
-import { Menu, X } from "lucide-react"; // Optional: icons
+import React from "react";
 
-const NavBar = () => {
-  const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen(!isOpen);
+const NavBar = ({aboutRef,scrollToSection, contactRef,landingRef,serviceRef,testimonialsRef,trustedbyRef,workedwithyRef}) => {
+
+ 
 
   return (
     <header className="w-full sticky top-0 z-40 bg-[#f5f9f9] border-b border-[#e3e9ef] shadow-md">
@@ -25,12 +24,17 @@ const NavBar = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center space-x-8 font-medium">
-          <li><a href="#home" className="hover:text-themeColor transition">Home</a></li>
-          <li><a href="#services" className="hover:text-themeColor transition">Services</a></li>
+          <button className="hover:text-themeColor transition" onClick={()=>scrollToSection(landingRef)}>Home</button>
+          <button className="hover:text-themeColor transition" onClick={()=>scrollToSection(serviceRef)}>Services</button>
+          <button className="hover:text-themeColor transition" onClick={()=>scrollToSection(workedwithyRef)}>Work</button>
+          <button className="hover:text-themeColor transition" onClick={()=>scrollToSection(trustedbyRef)}>Clients</button>
+          <button className="hover:text-themeColor transition" onClick={()=>scrollToSection(aboutRef)}>About</button>
+          <button className="hover:text-themeColor transition" onClick={()=>scrollToSection(contactRef)}>Contact</button>
+          {/* <li><a href="#services" className="hover:text-themeColor transition">Services</a></li>
           <li><a href="#work" className="hover:text-themeColor transition">Work</a></li>
           <li><a href="#clients" className="hover:text-themeColor transition">Clients</a></li>
           <li><a href="#about" className="hover:text-themeColor transition">About</a></li>
-          <li><a href="#contact" className="hover:text-themeColor transition">Contact</a></li>
+          <li><a href="#contact" className="hover:text-themeColor transition">Contact</a></li> */}
         </ul>
 
         {/* CTA Button - Desktop Only */}

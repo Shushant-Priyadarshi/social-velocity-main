@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 
-const OurWork = () => {
+const OurWork =forwardRef ((props,workedwithyRef)=> {
 
 
 // Work We Have Done / Case Studies
@@ -28,7 +28,7 @@ const works = [
   ];
   
   return (
-    <div><section id="work" className="py-14 md:py-20  px-2 md:px-4 mb-4">
+    <div ref={workedwithyRef}><section id="work" className="py-14 md:py-20  px-2 md:px-4 mb-4">
     <div className="max-w-6xl mx-auto">
     <h2 className="text-2xl  md:text-4xl font-bold text-center mb-8 md:mb-16 text-[#1d2549]" data-aos="zoom-out-up">
   <span className="relative inline-block" >
@@ -62,6 +62,6 @@ const works = [
     </div>
   </section></div>
   )
-}
+});
 
 export default OurWork
