@@ -12,9 +12,10 @@ const NavBar = () => {
         {/* Logo Section */}
         <div className="flex items-center">
           <img
-            src="/flash.png"
+            src="/company-logos/flash.png"
             alt="social velocity logo"
             className="h-14 w-auto"
+            loading="lazy"
           />
           <div className="font-bold text-2xl tracking-tight flex flex-col leading-3 ">
             <span className="mb-2">Social</span>

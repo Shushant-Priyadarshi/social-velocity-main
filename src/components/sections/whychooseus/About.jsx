@@ -34,7 +34,7 @@ const About = () => {
         <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md mx-auto">
           <div className="relative rounded-full border-4 border-dotted border-[#e2e9f6] p-6 sm:p-8 md:p-10 aspect-square w-full animate-fade-in">
             <img
-              src="/flash.png"
+              src="/company-logos/flash.png"
               alt="Digital Marketing for Healthcare"
               className="rounded-full shadow-xl object-cover w-full h-full"
               loading="lazy" 
@@ -42,11 +42,11 @@ const About = () => {
 
             {/* Floating Social Icons */}
             {[
-              { src: "/facebook.svg", className: "top-0 left-1/2 -translate-x-1/2" },
-              { src: "/instagram.svg", className: "top-1/4 -left-5" },
-              { src: "/linkedin.svg", className: "top-1/2 right-[-20px] -translate-y-1/2" },
-              { src: "/twitter.svg", className: "bottom-3 left-3/4 translate-x-1/2" },
-              { src: "/google.svg", className: "bottom-1 left-1/4" },
+              { src: "/company-logos/facebook.svg", className: "top-0 left-1/2 -translate-x-1/2" },
+              { src: "/company-logos/instagram.svg", className: "top-1/4 -left-5" },
+              { src: "/company-logos/linkedin.svg", className: "top-1/2 right-[-20px] -translate-y-1/2" },
+              { src: "/company-logos/twitter.svg", className: "bottom-3 left-3/4 translate-x-1/2" },
+              { src: "/company-logos/google.svg", className: "bottom-1 left-1/4" },
             ].map((icon, i) => (
               <div
                 key={i}

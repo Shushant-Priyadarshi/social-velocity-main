@@ -4,17 +4,17 @@ const Footer = () => {
   const linksData = [
     {
       social: "Instagram",
-      icon: "/instagram.svg",
-      link: "https://www.instagram.com/socialvelocity.in/",
+      icon: "/company-logos/instagram.svg",
+      link: "https://www.instagram.com/socialvelocity_?igsh=MXYzbGw2b2FnNm05cw==",
     },
     {
       social: "WhatsApp",
-      icon: "/whatsapp.svg",
-      link: "https://wa.me/919167776777",
+      icon: "/company-logos/whatsapp.svg",
+      link: "https://wa.me/917394982690",
     },
     {
       social: "Facebook",
-      icon: "/facebook.svg",
+      icon: "/company-logos/facebook.svg",
       link: "https://www.facebook.com/socialvelocity.in",
     },
   
@@ -27,9 +27,10 @@ const Footer = () => {
         {/* Logo & Name */}
         <div className="flex items-center space-x-3">
           <img
-            src="/flash.png"
+            src="/company-logos/flash.png"
             alt="Lab Darshi Logo"
             className="h-8 w-8 rounded-full shadow-sm"
+            loading='lazy'
           />
           <span className="font-semibold text-lg md:text-xl tracking-tight">Social Velocity</span>
         </div>

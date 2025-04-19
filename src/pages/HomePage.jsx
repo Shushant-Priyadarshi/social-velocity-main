@@ -1,14 +1,14 @@
 import React from 'react'
-import HeroSection from "../components/HeroSection";
-import NavBar from "../components/NavBar";
-import ServiceSection from "../components/ServiceSection";
-import OurWork from "../components/OurWork";
-import OurClients from "../components/OurClients";
-import About from "../components/About";
-import StastAndTestimonials from "../components/StatsAndTestimonials";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
-import WhatsAppBtn from "../components/WhatsAppBtn";
+import HeroSection from "../components/sections/landingpage/HeroSection";
+import NavBar from "../components/common/NavBar";
+import ServiceSection from "../components/sections/services/ServiceSection";
+import OurWork from "../components/sections/workedwith/OurWork";
+import OurClients from "../components/sections/trustedby/OurClients";
+import About from "../components/sections/whychooseus/About";
+import StastAndTestimonials from "../components/sections/testimonials/StatsAndTestimonials";
+import Contact from "../components/sections/contactus/Contact";
+import Footer from "../components/common/Footer";
+import WhatsAppBtn from "../components/common/WhatsAppBtn";
 
 const HomePage = () => {
   return (

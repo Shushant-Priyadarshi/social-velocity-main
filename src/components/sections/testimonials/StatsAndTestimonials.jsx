@@ -1,5 +1,5 @@
 import React from "react";
-import CountUp from './reactbits/CountUp'
+import CountUp from '../../reactbits/CountUp'
 const StatsAndTestimonials = () => {
   return (
     <div>

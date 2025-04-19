@@ -29,7 +29,7 @@ const HeroSections = () => {
             {/* Dotted Circle Wrapper */}
             <div className="relative rounded-full border-4 border-dotted border-[#e2e9f6] p-6 sm:p-8 md:p-10 aspect-square w-full animate-fade-in">
               <img
-                src="/flash.png"
+                src="/company-logos/flash.png"
                 alt="Digital Marketing for Healthcare"
                 className="rounded-full shadow-2xl object-cover w-full h-full"
                 loading="lazy" 
@@ -37,19 +37,19 @@ const HeroSections = () => {
 
               {/* Social Media Icons - Non-clickable */}
               <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-20 animate-float">
-                <img src="/facebook.svg" alt="Facebook" className="w-8 sm:w-10 h-8 sm:h-10 hover:scale-110 transition-transform rounded-full shadow-md border" loading="lazy" />
+                <img src="/company-logos/facebook.svg" alt="Facebook" className="w-8 sm:w-10 h-8 sm:h-10 hover:scale-110 transition-transform rounded-full shadow-md border" loading="lazy" />
               </div>
               <div className="absolute top-1/4 -left-5 z-20 animate-float">
-                <img src="/instagram.svg" alt="Instagram" className="w-8 sm:w-10 h-8 sm:h-10 hover:scale-110 transition-transform rounded-full shadow-md border p-1" loading="lazy" />
+                <img src="/company-logos/instagram.svg" alt="Instagram" className="w-8 sm:w-10 h-8 sm:h-10 hover:scale-110 transition-transform rounded-full shadow-md border p-1" loading="lazy" />
               </div>
               <div className="absolute top-1/2 -translate-y-1/2 -right-5 z-20 animate-float">
-                <img src="/linkedin.svg" alt="LinkedIn" className="w-8 sm:w-10 h-8 sm:h-10 hover:scale-110 transition-transform rounded-full shadow-md border p-1" loading="lazy" />
+                <img src="/company-logos/linkedin.svg" alt="LinkedIn" className="w-8 sm:w-10 h-8 sm:h-10 hover:scale-110 transition-transform rounded-full shadow-md border p-1" loading="lazy" />
               </div>
               <div className="absolute bottom-4 left-3/4 translate-x-1/2 z-20 animate-float">
-                <img src="/twitter.svg" alt="Twitter" className="w-8 sm:w-10 h-8 sm:h-10 hover:scale-110 transition-transform rounded-full shadow-md border" loading="lazy" />
+                <img src="/company-logos/twitter.svg" alt="Twitter" className="w-8 sm:w-10 h-8 sm:h-10 hover:scale-110 transition-transform rounded-full shadow-md border" loading="lazy" />
               </div>
               <div className="absolute bottom-0  left-20 md:left-32 -translate-x-10 z-20 animate-float">
-                <img src="/google.svg" alt="Google" className="w-8 sm:w-10 h-8 sm:h-10 hover:scale-110 transition-transform rounded-full shadow-md border p-1" loading="lazy" />
+                <img src="/company-logos/google.svg" alt="Google" className="w-8 sm:w-10 h-8 sm:h-10 hover:scale-110 transition-transform rounded-full shadow-md border p-1" loading="lazy" />
               </div>
             </div>
           </div>
